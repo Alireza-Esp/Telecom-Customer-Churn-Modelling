@@ -1,1 +1,2 @@
 v1: clean and optimize raw data to our useful data
+v2: fix problem of being "object" of "Total Charges" column
