@@ -1,2 +1,3 @@
-v1: clean and optimize raw data to our useful data
-v2: fix problem of being "object" of "Total Charges" column
+v0: clean and optimize raw data to our useful data
+v1: fix problem of being "object" of "Total Charges" column
+v2: replace Nan with "	NULL" str in 3 "Offer", "Churn Category" and "Churn Reason"
