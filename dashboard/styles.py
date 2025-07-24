@@ -29,36 +29,29 @@ css_styles = """
 </style>
 """
 
-plotly_color_palettes = [
-    px.colors.qualitative.Set1,
-    px.colors.qualitative.Set2,
-    px.colors.qualitative.Set3,
-    ]
-
 color_scales = [
     "blues",
     "greens", 
     "purples"
     ]
 
-
-# plotly_color_palettes2 = [px.colors.qualitative.Alphabet,
-#     px.colors.qualitative.Antique,
-#     px.colors.qualitative.Bold,
-#     px.colors.qualitative.D3,
-#     px.colors.qualitative.Dark2,
-#     px.colors.qualitative.Dark24,
-#     px.colors.qualitative.G10,
-#     px.colors.qualitative.Light24,
-#     px.colors.qualitative.Pastel,
-#     px.colors.qualitative.Pastel1,
-#     px.colors.qualitative.Pastel2,
-#     px.colors.qualitative.Plotly,
-#     px.colors.qualitative.Prism,
-#     px.colors.qualitative.Safe,
-#     px.colors.qualitative.Set1,
-#     px.colors.qualitative.Set2,
-#     px.colors.qualitative.Set3,
-#     px.colors.qualitative.T10,
-#     px.colors.qualitative.Vivid
-#     ]
+plotly_color_palettes = [px.colors.qualitative.Alphabet,
+    px.colors.qualitative.Antique,
+    px.colors.qualitative.Bold,
+    px.colors.qualitative.D3,
+    px.colors.qualitative.Dark2,
+    px.colors.qualitative.Dark24,
+    px.colors.qualitative.G10,
+    px.colors.qualitative.Light24,
+    px.colors.qualitative.Pastel,
+    px.colors.qualitative.Pastel1,
+    px.colors.qualitative.Pastel2,
+    px.colors.qualitative.Plotly,
+    px.colors.qualitative.Prism,
+    px.colors.qualitative.Safe,
+    px.colors.qualitative.Set1,
+    px.colors.qualitative.Set2,
+    px.colors.qualitative.Set3,
+    px.colors.qualitative.T10,
+    px.colors.qualitative.Vivid
+    ]

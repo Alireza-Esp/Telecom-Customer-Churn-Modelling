@@ -29,6 +29,8 @@ def get_histogram_plot(data: pd.DataFrame, category_x: str, category_color: str)
         data_frame=data,
         x=category_x,
         color=category_color,
+        title="Count of unique values of " + category_x,
+        subtitle="Based on unique values of " + category_color,
         color_discrete_sequence=choice(plotly_color_palettes),
         template="plotly_white"
     )
@@ -39,6 +41,8 @@ def get_univariate_box_plot(data: pd.DataFrame, numeric_axis: str, category_colo
         data_frame=data,
         y=numeric_axis,
         color=category_color,
+        title="Distribution of " + numeric_axis + " values",
+        subtitle="Based on unique values of " + category_color,
         color_discrete_sequence=choice(plotly_color_palettes),
         template="plotly_white"
     )
@@ -49,8 +53,8 @@ def get_pie_chart(data: pd.DataFrame, category: str, numeric: str):
         data_frame=data,
         names=category,
         values=numeric,
-        title=category,
-        subtitle=numeric,
+        title="Summation of " + numeric + " values",
+        subtitle="Based on unique values of " + category,
         color_discrete_sequence=choice(plotly_color_palettes),
         template="plotly_white"
     )
