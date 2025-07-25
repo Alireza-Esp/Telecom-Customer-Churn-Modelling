@@ -3,6 +3,9 @@ import plotly.express as px
 
 css_styles = """
 <style>
+        [data-testid="stSidebar"] {
+            width: 320px;
+        }
         [data-testid="stMainBlockContainer"] {
             padding-top: 80px;
             padding-bottom: 80px;
@@ -12,7 +15,10 @@ css_styles = """
             margin-bottom: 0px;
             margin-left: 0px;
             margin-right: 0px;
-            max-width: 85%;
+            max-width: 90%;
+        }
+        [data-testid="contextText"] {
+            font-size: 50px;
         }
         [data-testid="stVerticalBlock"] {
             gap: 0px;
@@ -21,15 +27,15 @@ css_styles = """
         #     text-align: justify;
         # }
         .maplibregl-canvas {
-            border-radius: 10px
+            border-radius: 10px;
         }
         .maplibregl-ctrl-attrib-inner {
-            font-size: 8px
+            font-size: 8px;
         }
 </style>
 """
 
-color_scales = [
+plotly_color_scales = [
     "blues",
     "greens", 
     "purples"
