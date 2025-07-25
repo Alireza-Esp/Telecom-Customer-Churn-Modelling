@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from random import choice
-from styles import plotly_color_palettes, color_scales
+from styles import plotly_color_palettes, plotly_color_scales
 
 @st.cache_resource
 def get_customers_scatter_map(data: pd.DataFrame, churn_label: str, color: str, max_size: float, label: str):
@@ -71,11 +71,11 @@ def get_multivariate_box_plot(data: pd.DataFrame, category_axis: str, numeric: s
     )
 
 @st.cache_resource
-def get_density_heatmap_plot(data: pd.DataFrame, numeric_x: str, numeric_y: str, color_scales: list):
+def get_density_heatmap_plot(data: pd.DataFrame, numeric_x: str, numeric_y: str):
     return px.density_heatmap(
         data_frame=data,
         x=numeric_x,
         y=numeric_y,
-        color_continuous_scale=choice(color_scales),
+        color_continuous_scale=choice(plotly_color_scales),
         template="plotly_white"
     )
