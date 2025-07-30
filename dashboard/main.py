@@ -52,7 +52,7 @@ with sec0:
     
     st.markdown(
         """
-        **This dataset tracks a telco company's customer churn located in California based on a variety of possible factors.\
+        **This dataset tracks a telecom company's customer churn located in California based on a variety of possible factors.\
         The churn column indicates whether or not the customer left within the last month.\
         Other columns include gender, dependents, monthly charges, and many with information about the types of services each customer has.<br>\
         Sources: [Kaggle](https://www.kaggle.com/datasets/ylchang/telco-customer-churn-1113), [IBM](https://community.ibm.com/community/user/blogs/steven-macko/2019/07/11/telco-customer-churn-1113)**
