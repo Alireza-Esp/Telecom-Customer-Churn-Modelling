@@ -42,8 +42,8 @@ with st.sidebar:
         st.markdown(" - [Website](https://alireza-esp.ir/)")
 
 
-data = get_main_dataset()
-cities_density = get_cities_density_dataset()
+data = get_main_dataset() # type: ignore
+cities_density = get_cities_density_dataset() # type: ignore
 
 sec0 = st.container(border=True)
 with sec0:
@@ -139,7 +139,7 @@ with sec1:
     
 st.container(height=20, border=False)
 
-categorical_columns, numerical_columns = get_categorical_numerical_columns(data=data)
+categorical_columns, numerical_columns = get_categorical_numerical_columns(data=data) # type: ignore
 
 sec2 = st.container(border=True)
 with sec2:
@@ -510,4 +510,9 @@ with sec6:
             numeric_y=density_heatmap3_secondary_numeric_feature,
         )
         st.plotly_chart(density_heatmap3, key="density_heatmap3")
-    
+st.container(height=20, border=False)
+
+sec7 = st.container(border=True)
+with sec7:
+    st.markdown("### Make a Prediction with Model!")
+    st.container(height=20, border=False)
